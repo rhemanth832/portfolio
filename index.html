@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rasamsetty Hemanth's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <style>
+        .education-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.edu-box {
+  border-left: 8px solid crimson;
+  padding: 15px 20px;
+  border-radius: 12px;
+  background: #f9f9f9;
+  color: #000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.edu-box:hover {
+  background: #fff;
+  border-left-color: #111;
+}
+
+
+.experience-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.exp-card {
+  border: 2px solid crimson;
+  padding: 20px;
+  border-radius: 10px;
+  background: #fefefe;
+  color: #111;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.exp-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.exp-card h4 {
+  margin-bottom: 10px;
+  color: crimson;
+  font-size: 22px;
+}
+
+.exp-card ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+
+    </style>
+</head>
+
+<body>
+    <!-- Scroll Button start -->
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-double-up"></i>
+    </div>
+    <!-- Scroll Button end -->
+    <!-- Navbar Start-->
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo">
+                <a href="RasamsettyHemanthResume.pdf">Portfo<span>lio.</span>
+               </a>
+            </div>
+            <ul class="menu">
+                <li>
+                    <a href="#home" class="menu-btn">Home</a>
+                </li>
+                <li>
+                    <a href="#about" class="menu-btn">About</a>
+                </li>
+                <li>
+                    <a href="#skills" class="menu-btn">Skills</a>
+                </li>
+                <li>
+                    <a href="#projects" class="menu-btn">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact" class="menu-btn">Contact</a>
+                </li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+    <!-- Home Section Start -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello 👋 I'm</div>
+                <div class="text-2">Rasamsetty Hemanth</div>
+                <div class="text-3">And I'm a <span class="typing"></span>
+                </div>
+                <div>
+                    <a href="https://www.linkedin.com/in/rasamsetty-hemanth-2bb307253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noreferrer">Find Me at <i class="fad fa-angle-right"></i>
+               </a>
+                <a href="RasamsettyHemanthResume.pdf" target="_blank" rel="noreferrer">Get my Resume<i class="fad fa-angle-right"></i>
+               </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Home Section End -->
+    <!-- About section start -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title fadein">About me</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="images\Profile Picture.jpg" alt="Hemanth Rasamsetty">
+                    <div>
+                        <div class="wrapper">
+                            <div class="button1">
+                                <div class="icon">
+                                    <a href="https://www.linkedin.com/in/rasamsetty-hemanth-2bb307253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noreferrer">
+                                        <i class="fab fa-linkedin"></i>
+                                </div>
+                                <span>LinkedIn </a>
+                           </span>
+                            </div>
+                            <div class="buttonmob">
+                                <div class="button1">
+                                    <div class="icon">
+                                        <a href="https://x.com/rhemanth143" target="_blank" rel="noreferrer">
+                                            <i class="fab fa-twitter"></i>
+                                    </div>
+                                    <span>Twitter </a>
+                              </span>
+                                </div>
+                            </div>
+                            <div class="buttonmob1"></div>
+                            <div class="button1">
+                                <div class="icon">
+                                    <a href="https://github.com/rhemanth832" target="_blank" rel="noreferrer">
+                                        <i class="fab fa-github"></i>
+                                </div>
+                                <span>Github </a>
+                           </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">I'm a Hemanth Rasamsetty and <span class="break">I'm a <span class="typing2"></span>
+                        </span>
+                    </div>
+                    <p> I'm Rasamsetty Hemanth, a passionate tech enthusiast 
+specializing in website development, cybersecurity, and no
+code application creation. I thrive on experimenting with new 
+technologies, embracing innovative ideas, and learning from 
+every experience. With a developer account on the Play Console, 
+I've published apps and actively participated in numerous 
+internships, hackathons, and tech workshops. My notable project, 
+True-Profile, a fake profile detection system, currently has a 
+prototype and is in the patent application phase. I'm constantly 
+inspired by the rapid advancements in AI and committed to 
+adapting to emerging tech trends.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about section End -->
+    <!-- Skills section start -->
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title fadein">My skills</h2>
+            <div class="skills-content">
+                <div class="column left">
+                    <div class="text">My creative skills</div>
+                    <ul>
+    <li><strong>Languages:</strong> C, Python, JavaScript</li>
+    <li><strong>Tools:</strong> Git, Linux, Windows, DSA Problem Solving, AWS</li>
+    <li><strong>Framework:</strong> Django</li>
+    <li><strong>Technology:</strong> HTML, CSS, SQL, Google Firebase, API, FlutterFlow</li>
+    <li><strong>Cybersecurity:</strong> Metasploit, Pentesting, Kali Linux</li>
+  </ul>
+                </div>
+
+                <div class="column right">
+                    <div class="info">
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
+                            <img src="./images/javascript.png" alt="javascript" width="80" />
+                        </a>
+                        <a href="https://www.python.org/" target="_blank" rel="noreferrer">
+                            <img src="images\python.jpeg" alt="python" width="80" />
+                        </a>
+                        <a href="https://www.djangoproject.com/"target="_blank" rel="noreferrer">
+                            <img src="./images/django.png" alt="Django" width="80" />
+                        </a>
+                        <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
+                            <img src="./images/html5.png" alt="html5" width="80" />
+                        </a>
+                        <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer">
+                            <img src="./images/css3.png" alt="css3" width="80" />
+                        </a>
+                        </a>
+                        <a href="https://aws.amazon.com/" target="_blank" rel="noreferrer">
+                            <img src="./images/aws.png" alt="AWS" width="80" />
+                        </a>
+                        <a href= target="https://www.flutterflow.io/"_blank" rel="noreferrer"></a>
+                            <img src=" https://media.licdn.com/dms/image/v2/C560BAQFceNxb2bIqxA/company-logo_200_200/company-logo_200_200/0/1676402103517/flutterflow_logo?e=2147483647&v=beta&t=Zt0RwLD-Lc6Qwab1K0z78J8IAjROLP9gAdmZZYASG_w" alt="flutterflow" width="80" />
+                        </a>
+                        <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
+                            <img src="./images/git.png" alt="git" width="80" />
+                        </a>
+                        <a href="https://www.canva.com/en_in/" target="_blank" rel="noreferrer"></a>
+                            <img src="https://images-eds-ssl.xboxlive.com/image?url=4rt9.lXDC4H_93laV1_eHHFT949fUipzkiFOBH3fAiZZUCdYojwUyX2aTonS1aIwMrx6NUIsHfUHSLzjGJFxxo4K81Ei7WzcnqEk8W.MgwZewXmv4pW8wmOWnlpbiTNumBqBf7TbM71u5LFhLlTyjE7iVpSGkEF7P5YwguwGs48-&format=source&h=307" alt="Canva" width="80" />
+                        </a>
+                        <a href="https://www.kali.org/" target="_blank" rel="noreferrer">
+                            <img src="https://play-lh.googleusercontent.com/X23bnr4M7EQEFN26u_IaqadPjGgVODiv18ZUPsww-UWjA_m7YkIyQvhwDS3RhfrDh0WU=w240-h480-rw" alt="KaliLinux" width="80" />
+                        </a>
+                    </div>
+                </div>
+<div>
+    <!-- EXPERIENCE Section -->
+<section class="experience" id="experience">
+  <div class="max-width">
+    <h2 class="title fadein">Experience</h2>
+    <div class="experience-content">
+
+      <div class="exp-card">
+        <h4>Full Stack Developer</h4>
+        <p><strong>Company:</strong> Innovarsity</p>
+        <p><strong>Duration:</strong> 07/2024 – 08/2024</p>
+        <p><strong>Location:</strong> Chirala, A.P, India</p>
+        <p><strong>Description:</strong> A company focused on innovative educational solutions</p>
+        <ul>
+          <li>Built responsive web apps, increased UX engagement by 20%</li>
+          <p><a href="https://drive.google.com/file/d/1SQgbflem4Ua6ypQ3tz-EBR_S4FJiGUR7/view?usp=sharing" target="_blank" rel="noreferrer" style="color: crimson; font-weight: bold;">📄 View Offer Letter</a></p>
+          <p><a href="https://cleaneatz.in" target="_blank" rel="noreferrer" style="color: crimson; font-weight: bold;">📄 View Completed Project</a></p>
+        </ul>
+      </div>
+
+      <div class="exp-card">
+        <h4>App Developer</h4>
+        <p><strong>Company:</strong> Google Play</p>
+        <p><strong>Duration:</strong> 02/2024 – 09/2024</p>
+        <p><strong>Description:</strong> Platform for publishing and distributing mobile applications</p>
+        <ul>
+          <li>Published apps</li>
+          <li>Integrated APIs, Firebase, and secure authentication systems</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</div>
+
+<!-- ACHIEVEMENTS Section -->
+<section class="achievements" id="achievements">
+    <div class="max-width">
+        <h2 class="title fadein">Achievements</h2>
+        <div class="text">Hackathons Participation</div>
+        <p>Participated in hackathons such as the Smart India Hackathon, T-Hub and Yukti Hackathon.</p>
+    </div>
+</section>
+
+<!-- EDUCATION Section -->
+<section class="education" id="education">
+    <div class="max-width">
+        <h2 class="title fadein">Education</h2>
+        <div class="education-content">
+            <div class="edu-box">
+                <strong>Bachelor of Technology - BTech</strong><br>
+                KKR & KSR Institute of Technology & Sciences<br>
+                01/2022 – 05/2026, VINJANAMPADU Village<br>
+                <strong>CGPA:</strong> 7.77 / 10
+            </div>
+            <div class="edu-box">
+                <strong>Higher Secondary Education</strong><br>
+                Narayana Junior College, India<br>
+                01/2020 – 04/2022<br>
+                <strong>Percentage:</strong> 70%
+            </div>
+            <div class="edu-box">
+                <strong>Secondary School Leaving Certificate</strong><br>
+                Oxford IIT Public School<br>
+                07/2014 – 04/2020<br>
+                <strong>Percentage:</strong> 99%
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- PUBLICATIONS Section -->
+<section class="publications" id="publications">
+    <div class="max-width">
+        <h2 class="title fadein">Publications</h2>
+        <p><strong>Secure Identity Verification by using True-Profile Detection</strong><br>
+        <strong>Published in:</strong> IJSDR<br>
+        <strong>Authors:</strong> Rasamsetty Hemanth / Rasamsetty Bulli Babu</p>
+        <p>True-Profile is an app that verifies social media users using facial recognition and phone number verification to detect fake profiles and allow only verified users to chat securely.</p>
+        <p><a href="https://drive.google.com/file/d/1iNEljLLeHab4CpkmjxbyLeYWUVkmGXdM/view?usp=sharing" target="_blank" rel="noreferrer" style="color: crimson; font-weight: bold;">📄 View Research Paper</a></p>
+    </div>
+</section>
+
+
+
+
+
+            <div class="column left">
+            </div>
+
+        </div>
+    </section>
+    <!-- Skills section end -->
+    <!-- Project section start -->
+    <section class="projects" id="projects">
+        <div class="max-width">
+            <h2 class="title fadein">My Projects</h2>
+            <div class="carousel owl-carousel">
+                <div class="card">
+                    <a href="https://cleaneatz.in/" target="_blank" rel="noreferrer" title="CleanEatz">
+                        <div class="box">
+                            <img src="images\CleanEatz.png" alt="Healthy Food Website">
+
+                        </div>
+                    </a>
+                    <a href="https://cleaneatz.in/" target="_blank" rel="noreferrer" title="CleanEatz">
+                        <p>CleanEatz- A Healthy Food Website</p>
+                    </a>
+
+                    <p>Html, CSS, JavaScript, React.js, Node.js</p>
+
+                </div>
+                <div class="card">
+                    <a href="https://true-profile-f4dpv3.flutterflow.app/" target="_blank" rel="noreferrer" title="TrueProfile">
+                        <div class="box">
+                            <img src="images\1.trueprofile-png.png" alt="User Dashboard Panel">
+
+                        </div>
+                    </a>
+                    <a href="https://true-profile-f4dpv3.flutterflow.app/" target="_blank" rel="noreferrer" title="TrueProfile-A Fake Profile Detection App">
+                        <p>A Fake Profile Detection App Prototype</p>
+                    </a>
+
+                    <p>Html, CSS, FlutterFlow</p>
+                </div>
+                <div class="card">
+                    <a href="https://afflux.flutterflow.app/" target="_blank" rel="noreferrer" title="AffluX">
+                        <div class="box">
+                            <img src="images\Afflux - Copy.jpg" alt="AffluX- A Personal Health Assistant">
+
+                        </div>
+                    </a>
+                    <a href="https://afflux.flutterflow.app/" target="_blank" rel="noreferrer" title="AffluX- A Personal Health Assistant">
+                        <p>AffluX- A Personal Health Assistant</p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://health-bot-v1xngi.flutterflow.app/" target="_blank" rel="noreferrer" title="AffluX">
+                        <div class="box">
+                            <img src="images\Logo.jpg" alt="HealthBot- A Personal Health Assistant">
+
+                        </div>
+                    </a>
+                    <a href="https://health-bot-v1xngi.flutterflow.app/" target="_blank" rel="noreferrer" title="HealthBot - A Personal Health Assistant">
+                        <p>HealthBot - Your Personal Health Assistant</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Project section end -->
+    <!-- Contact section start -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title fadein">Contact me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Reach Out to me!</div>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">Hemanth Rasamsetty</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">Guntur, A.P , India</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope email-icon"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title"><a href="mailto:rasamsettyhemanthsaketh@gmail.com" target="_blank">rasamsettyhemanthsaketh@gmail.com</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text1">Stay Connected</div>
+                    <div>
+                        <div class="wrapper">
+                            <div class="button1">
+                                <div class="icon">
+                                    <a href="https://www.linkedin.com/in/rasamsetty-hemanth-2bb307253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noreferrer">
+                                        <i class="fab fa-linkedin"></i>
+                                </div>
+                                <span>LinkedIn </a>
+                           </span>
+                            </div>
+                            <div class="buttonmob">
+                                <div class="button1">
+                                    <div class="icon">
+                                        <a href="https://x.com/rhemanth143" target="_blank" rel="noreferrer">
+                                            <i class="fab fa-twitter"></i>
+                                    </div>
+                                    <span>Twitter </a>
+                              </span>
+                                </div>
+                            </div>
+                            <div class="buttonmob1"></div>
+                            <div class="button1">
+                                <div class="icon">
+                                    <a href="https://github.com/rhemanth832" target="_blank" rel="noreferrer">
+                                        <i class="fab fa-github"></i>
+                                </div>
+                                <span>Github </a>
+                           </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact section end -->
+    <!-- footer section start -->
+    <footer>
+        <span>Created By <a href="https://www.linkedin.com/in/rasamsetty-hemanth-2bb307253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noreferrer">Rasamsetty Hemanth</a> | <span class="far fa-copyright"></span> <span id="year"></span> All rights reserved </span>
+    </footer>
+    <!-- footer section end -->
+    <!-- External Javascript File start-->
+    <script src="script.js" async></script>
+    <!-- External Javascript File end-->
+</body>
+
+</html>
