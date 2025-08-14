@@ -14,6 +14,6 @@ This project showcases my skills, projects, and achievements in **Web Developmen
 Check out my portfolio here: **[rhemanth.netlify.app](https://rhemanth.netlify.app/)**  
 
 ## 📬 Contact  
-📧 Email: [your-email@example.com]  
+📧 Email: [rasamsettyhemanthsaketh@gmail.com](rasamsettyhemanthsaketh@gmail.com)
 🔗 LinkedIn: [linkedin.com/in/rasamsettyhemanth](https://linkedin.com/in/rasamsettyhemanth)  
 💻 GitHub: [github.com/rhemanth832](https://github.com/rhemanth832)  
