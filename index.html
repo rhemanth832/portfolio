@@ -68,6 +68,142 @@
   padding-left: 20px;
 }
 
+/* PATENTS & PUBLICATIONS SECTION */
+.publications-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pub-box {
+  border-left: 8px solid crimson;
+  padding: 15px 20px;
+  border-radius: 12px;
+  background: #f9f9f9;
+  color: #000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.pub-box:hover {
+  background: #fff;
+  border-left-color: #111;
+}
+
+.pub-box strong {
+  font-size: 1.05rem;
+}
+
+.pub-box em {
+  color: #555;
+  font-style: normal;
+  display: block;
+  margin-top: 4px;
+}
+
+.pub-box a {
+  display: inline-block;
+  margin-top: 8px;
+  text-decoration: none;
+  color: crimson;
+  font-weight: bold;
+}
+
+.pub-box a:hover {
+  text-decoration: underline;
+}
+
+/* ACHIEVEMENTS SECTION */
+.achievements-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ach-box {
+  border-left: 8px solid crimson;
+  padding: 15px 20px;
+  border-radius: 12px;
+  background: #f9f9f9;
+  color: #000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.ach-box:hover {
+  background: #fff;
+  border-left-color: #111;
+}
+
+.ach-box strong {
+  font-size: 1.05rem;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.ach-box p {
+  margin: 0;
+  color: #333;
+}
+
+
+/* CERTIFICATIONS SECTION */
+.certifications-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cert-box {
+  border-left: 8px solid crimson;
+  padding: 15px 20px;
+  border-radius: 12px;
+  background: #f9f9f9;
+  color: #000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.cert-box:hover {
+  background: #fff;
+  border-left-color: #111;
+}
+
+.cert-box a {
+  color: crimson;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.cert-box a:hover {
+  text-decoration: underline;
+}
+
+/* LANGUAGES SECTION */
+.languages-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.lang-box {
+  border-left: 8px solid crimson;
+  padding: 15px 20px;
+  border-radius: 12px;
+  background: #f9f9f9;
+  color: #000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.lang-box:hover {
+  background: #fff;
+  border-left-color: #111;
+}
+
+.lang-box strong {
+  font-size: 1.05rem;
+}
 
     </style>
 </head>
@@ -117,7 +253,7 @@
                 <div class="text-3">And I'm a <span class="typing"></span>
                 </div>
                 <div>
-                    <a href="https://www.linkedin.com/in/rasamsetty-hemanth-2bb307253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noreferrer">Find Me at <i class="fad fa-angle-right"></i>
+                    <a href="https://www.linkedin.com/in/rasamsettyhemanth" target="_blank" rel="noreferrer">Find Me at <i class="fad fa-angle-right"></i>
                </a>
                 <a href="RasamsettyHemanthResume.pdf" target="_blank" rel="noreferrer">Get my Resume<i class="fad fa-angle-right"></i>
                </a>
@@ -137,7 +273,7 @@
                         <div class="wrapper">
                             <div class="button1">
                                 <div class="icon">
-                                    <a href="https://www.linkedin.com/in/rasamsetty-hemanth-2bb307253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noreferrer">
+                                    <a href="https://www.linkedin.com/in/rasamsettyhemanth" target="_blank" rel="noreferrer">
                                         <i class="fab fa-linkedin"></i>
                                 </div>
                                 <span>LinkedIn </a>
@@ -193,10 +329,12 @@ adapting to emerging tech trends.</p>
                 <div class="column left">
                     <div class="text">My creative skills</div>
                     <ul>
-    <li><strong>Languages:</strong>C, Python, JavaScript</li>
-    <li><strong>Tools:</strong>Git, Linux, Windows, Metasploit, Flutter Flow, Canva, Bubble</li>
+    <li><strong>Languages:</strong>C, Python, JavaScript, Bash</li>
+    <li><strong>Tools:</strong>Git, Linux, Windows, Metasploit, Kali Linux, Wireshark, 
+NMAP, Flutter Flow, Canva, Bubble</li>
     <li><strong>Framework:</strong>Django</li>
-    <li><strong>Technology:</strong>HTML, CSS, MySQL, Google Firebase, Google Cloud, REST API</li>
+    <li><strong>Technology:</strong>HTML, CSS, MySQL, Google Firebase, Google Cloud, 
+REST API</li>
     <li><strong>cybersecurity:</strong>Kali Linux, Wireshark, NMAP, Bash, Python</li>
        </div>
 
@@ -280,10 +418,22 @@ adapting to emerging tech trends.</p>
 <section class="achievements" id="achievements">
     <div class="max-width">
         <h2 class="title fadein">Achievements</h2>
-        <div class="text">Hackathons Participation</div>
-        <p>Participated in hackathons like Smart India Hackathon, T-Hub, MSME and Yukti Hackathon.</p>
+        <div class="achievements-content">
+            
+            <div class="ach-box">
+                <strong>Hackathons Participation</strong>
+                <p>Participated in hackathons like Smart India Hackathon, MSME and THub.</p>
+            </div>
+
+            <div class="ach-box">
+                <strong>App Publications</strong>
+                <p>Published Health Bot and My Paper-Bot AI-chatbots for health guidance and educational assistance.</p>
+            </div>
+
+        </div>
     </div>
 </section>
+
 
 <!-- EDUCATION Section -->
 <section class="education" id="education">
@@ -294,34 +444,109 @@ adapting to emerging tech trends.</p>
                 <strong>Bachelor of Technology - BTech</strong><br>
                 KKR & KSR Institute of Technology & Sciences<br>
                 01/2022 – 05/2026, VINJANAMPADU Village<br>
-                <strong>CGPA:</strong> 7.77 / 10
+                <strong>CGPA:</strong> 7.74 / 10 (Present)
             </div>
             <div class="edu-box">
                 <strong>Higher Secondary Education</strong><br>
                 Narayana Junior College, India<br>
                 01/2020 – 04/2022<br>
-                <strong>Percentage:</strong> 70%
+                <strong>Percentage:</strong> 67.2%
             </div>
             <div class="edu-box">
                 <strong>Secondary School Leaving Certificate</strong><br>
                 Oxford IIT Public School<br>
                 07/2014 – 04/2020<br>
-                <strong>Percentage:</strong> 99%
+                <strong>Percentage:</strong> 100%
             </div>
         </div>
     </div>
 </section>
 
 
-<!-- PUBLICATIONS Section -->
 <section class="publications" id="publications">
     <div class="max-width">
-        <h2 class="title fadein">Publications</h2>
-        <p><strong>Secure Identity Verification by using True-Profile Detection</strong><br>
-        <strong>Published in:</strong> IJSDR<br>
-        <strong>Authors:</strong> Rasamsetty Hemanth / Rasamsetty Bulli Babu</p>
-        <p>True-Profile is an app that verifies social media users using facial recognition and phone number verification to detect fake profiles and allow only verified users to chat securely.</p>
-        <p><a href="https://drive.google.com/file/d/1iNEljLLeHab4CpkmjxbyLeYWUVkmGXdM/view?usp=sharing" target="_blank" rel="noreferrer" style="color: crimson; font-weight: bold;">📄 View Research Paper</a></p>
+        <h2 class="title fadein">Patents & Publications</h2>
+        <div class="publications-content">
+            
+            <!-- Patent -->
+            <div class="pub-box">
+                <strong>AI-Based System and Method for Verifying and Securing Digital Communication Profiles Using Multi-Factor Biometric and Social Graph Integration</strong>
+                <em>Published in:</em> Controller General of Patents, Designs & Trade Marks (CGPDTM)
+                <em>Authors:</em> Rasamsetty Hemanth / Dr.Rasamsetty Bulli Babu / Dr.S.Radha Krishnan / Dr.G.Murali
+                <em>Patent Number:</em> 202541071961
+                <em> Patent: A patented AI-driven identity verification system that 
+combines government ID analysis, real-time facial recognition, 
+phone number validation, and social media API integration to 
+eliminate fake profiles and enable secure communication.</em>
+                <a href="https://drive.google.com/file/d/1HlRE9vnvzWpJQmam8To40UGxmT3kBHqU/view" target="_blank">📄 View Patent Paper</a>
+            </div>
+
+            <!-- Publication -->
+            <div class="pub-box">
+                <strong>Secure Identity Verification by using True-Profile Detection</strong>
+                <em>Published in:</em> IJSDR
+                <em>Authors:</em> Rasamsetty Hemanth / Rasamsetty Bulli Babu
+                <em>A paper on an AI-based multi-layered identity verification system to 
+prevent fake profiles and improve trust in digital interactions.</em>
+                <a href="https://drive.google.com/file/d/1iNEljLLeHab4CpkmjxbyLeYWUVkmGXdM/view?usp=sharing" target="_blank">📄 View Research Paper</a>
+                <a href="https://drive.google.com/file/d/1m8vvSIZOeMI2X3STTH5rwN-xlV10S0aW/view?usp=drive_link" target="_blank">📄 View Certificate</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- LANGUAGES Section -->
+<section class="languages" id="languages">
+    <div class="max-width">
+        <h2 class="title fadein">Languages Known</h2>
+        <div class="languages-content">
+
+            <div class="lang-box">
+                <strong>English:</strong> Proficient
+            </div>
+
+            <div class="lang-box">
+                <strong>Telugu:</strong> Proficient / Native
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- CERTIFICATIONS Section -->
+<section class="certifications" id="certifications">
+    <div class="max-width">
+        <h2 class="title fadein">Certifications</h2>
+        <div class="certifications-content">
+
+            <div class="cert-box">
+                <a href="https://www.credly.com/badges/da074a03-2fb1-4df7-89a2-efd6911146df/linked_in_profile" target="_blank">Google Cloud Computing Foundations Certificate</a> – By Google
+            </div>
+
+            <div class="cert-box">
+                <a href="https://drive.google.com/file/d/1bhCs8cx-0r4NDb5IRR8Pi2U9KfII-JUY/view" target="_blank">Full Stack</a> – By Blackbugs
+            </div>
+
+            <div class="cert-box">
+                <a href="https://www.credly.com/badges/e50c0251-0fc0-416a-bc42-517415477da0/linked_in_profile" target="_blank">AWS Cloud Practitioner</a> & 
+                <a href="https://www.credly.com/badges/bc130633-2eb6-4b2f-8cb3-261ac341cd74/print" target="_blank">AWS Machine Learning Foundations</a> – By AWS
+            </div>
+
+            <div class="cert-box">
+                <a href="https://drive.google.com/file/d/1UYkE2F4B5o5f8ASIDqrDVfVjdJkwSLA7/view" target="_blank">Cybersecurity</a> – By EduSkills, PaloAlto
+            </div>
+
+            <div class="cert-box">
+                <a href="https://www.credly.com/badges/b1349eab-a320-4803-ac3a-d096e94616a6/public_url" target="_blank">AI Fundamentals</a> – By IBM
+            </div>
+
+            <div class="cert-box">
+                <a href="https://developers.google.com/profile/u/kits-rasamsettyhemanth" target="_blank">Google AI-ML Virtual Internship</a> – By Google Developers
+            </div>
+
+        </div>
     </div>
 </section>
 
@@ -334,6 +559,7 @@ adapting to emerging tech trends.</p>
 
         </div>
     </section>
+    
     <!-- Skills section end -->
     <!-- Project section start -->
     <section class="projects" id="projects">
@@ -417,6 +643,8 @@ healthy meals online.</p>
 guidance including disease info, diet plans, exercise 
 suggestions through NLP.</p>
                     <p>Skills: HTML, CSS, JavaScript, Django Flutter, NLP, AI Integration</p>
+                    <a href="https://github.com/rhemanth832/HealthBOT.git" target="_blank">Link to Download Apk</a>
+            
                 </div>
 
                 
@@ -488,7 +716,7 @@ suggestions through NLP.</p>
                         <div class="wrapper">
                             <div class="button1">
                                 <div class="icon">
-                                    <a href="https://www.linkedin.com/in/rasamsetty-hemanth-2bb307253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noreferrer">
+                                    <a href="https://www.linkedin.com/in/rasamsettyhemanth" target="_blank" rel="noreferrer">
                                         <i class="fab fa-linkedin"></i>
                                 </div>
                                 <span>LinkedIn </a>
@@ -524,7 +752,7 @@ suggestions through NLP.</p>
     <!-- Contact section end -->
     <!-- footer section start -->
     <footer>
-        <span>Created By <a href="https://www.linkedin.com/in/rasamsetty-hemanth-2bb307253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noreferrer">Rasamsetty Hemanth</a> | <span class="far fa-copyright"></span> <span id="year"></span> All rights reserved </span>
+        <span>Created By <a href="https://www.linkedin.com/in/rasamsettyhemanth" target="_blank" rel="noreferrer">Rasamsetty Hemanth</a> | <span class="far fa-copyright"></span> <span id="year"></span> All rights reserved </span>
     </footer>
     <!-- footer section end -->
     <!-- External Javascript File start-->
