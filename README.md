@@ -4,4 +4,4 @@ A responsive developer portfolio built with HTML, CSS, and vanilla JavaScript. T
 
 ## Website
 
-Requested Netlify address: https://rhemanth.netlify.app
+Netlify Link: https://rhemanth.netlify.app
