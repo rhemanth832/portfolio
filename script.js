@@ -1,93 +1,75 @@
-$(document).ready(function () {
-  // Scroll down sticky navbar script start
-  $(window).scroll(function () {
-    if (this.scrollY > 20) {
-      $(".navbar").addClass("sticky");
-    } else {
-      $(".navbar").removeClass("sticky");
+(() => {
+  'use strict';
+  const sections = [...document.querySelectorAll('main > section[id]')];
+  const links = [...document.querySelectorAll('.section-nav a')];
+  const progress = document.querySelector('.reading-progress');
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  let ticking = false;
+
+  function updateScroll() {
+    const position = window.scrollY;
+    const max = document.documentElement.scrollHeight - window.innerHeight;
+    progress.style.transform = `scaleX(${max > 0 ? position / max : 0})`;
+    let current = sections[0].id;
+    const threshold = Math.min(window.innerHeight * 0.3, 210);
+    for (const section of sections) {
+      if (section.getBoundingClientRect().top <= threshold) current = section.id;
     }
-    // Scroll down sticky navbar script end
-
-    // Scroll up Button script start
-    if (this.scrollY > 500) {
-      $(".scroll-up-btn").addClass("show");
-    } else {
-      $(".scroll-up-btn").removeClass("show");
+    if (max > 0 && max - position < 15) current = sections[sections.length - 1].id;
+    for (const link of links) {
+      const active = link.hash === `#${current}`;
+      link.classList.toggle('active', active);
+      if (active) link.setAttribute('aria-current', 'location');
+      else link.removeAttribute('aria-current');
     }
-    // Scroll up Button script end
+    ticking = false;
+  }
 
-    // Fade In & Fade Out Elements on Scroll script start
-    $(".fadein").each(function (i) {
-      var bottom_of_element = $(this).offset().top + $(this).outerHeight();
-      var bottom_of_window = $(window).scrollTop() + $(window).height();
+  function requestScrollUpdate() {
+    if (!ticking) {
+      requestAnimationFrame(updateScroll);
+      ticking = true;
+    }
+  }
+  window.addEventListener('scroll', requestScrollUpdate, { passive: true });
+  window.addEventListener('resize', requestScrollUpdate, { passive: true });
+  window.addEventListener('load', requestScrollUpdate);
+  updateScroll();
 
-      if (bottom_of_window > bottom_of_element) {
-        $(this).addClass("showme");
-      }
-      if (bottom_of_window < bottom_of_element) {
-        $(this).removeClass("showme");
-      }
-    });
-    // Fade In & Fade Out Elements on Scroll script end
+  if (window.matchMedia('(pointer: fine)').matches) {
+    document.addEventListener('pointermove', (event) => {
+      if (reducedMotion.matches) return;
+      document.documentElement.style.setProperty('--x', `${event.clientX}px`);
+      document.documentElement.style.setProperty('--y', `${event.clientY}px`);
+    }, { passive: true });
+  }
+
+  const email = 'rasamsettyhemanthsaketh@gmail.com';
+  const copyButton = document.querySelector('.copy-email');
+  const toast = document.querySelector('.toast');
+  let toastTimer;
+  function notify(message) {
+    clearTimeout(toastTimer);
+    toast.textContent = message;
+    toast.classList.add('visible');
+    toastTimer = setTimeout(() => toast.classList.remove('visible'), 3200);
+  }
+
+  copyButton.addEventListener('click', async () => {
+    let copied = false;
+    try {
+      await navigator.clipboard.writeText(email);
+      copied = true;
+    } catch {
+      const field = document.createElement('textarea');
+      field.value = email;
+      field.style.cssText = 'position:fixed;left:-9999px;top:0';
+      document.body.appendChild(field);
+      field.select();
+      try { copied = document.execCommand('copy'); } catch { copied = false; }
+      field.remove();
+      copyButton.focus({ preventScroll: true });
+    }
+    notify(copied ? 'Email address copied. Let’s talk!' : email);
   });
-
-  // Scroll up Button script start
-  $(".scroll-up-btn").click(function () {
-    $("html").animate({ scrollTop: 0 });
-  });
-  // Scroll up Button script end
-
-  // animation Script for display
-  const animationScript = ["Full Stack Developer", "Salesforce Specialist", "Cybersecurity", "AI Engineer", "Open to All Tech Roles"];
-
-  // Typing animation script start
-  new Typed(".typing", {
-    strings: animationScript,
-    typeSpeed: 100,
-    backSpeed: 60,
-    loop: true,
-  });
-
-  new Typed(".typing2", {
-    strings: animationScript,
-    typeSpeed: 100,
-    backSpeed: 60,
-    loop: true,
-  });
-  // Typing animation script End
-
-  // toggle menu/navbar script start
-  $(".menu-btn").click(function () {
-    $(".navbar .menu").toggleClass("active");
-    $(".menu-btn i").toggleClass("active");
-  });
-  // toggle menu/navbar script end
-
-  // owl carousel script start
-  $(".carousel").owlCarousel({
-    margin: 20,
-    loop: true,
-    autoplayTimeOut: 2000,
-    autoplayHoverPause: true,
-    responsive: {
-      0: {
-        items: 1,
-        nav: false,
-      },
-      600: {
-        items: 2,
-        nav: false,
-      },
-      1000: {
-        items: 3,
-        nav: false,
-      },
-    },
-  });
-  // owl carousel script end
-});
-
-// Get the current year
-const currentYear = new Date().getFullYear();
-// Set the current year in the span with id "year"
-document.getElementById('year').textContent = currentYear;
+})();
